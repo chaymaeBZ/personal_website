@@ -63,13 +63,13 @@
 				<article id="main">
 
 					<header class="special container">
-						<span class="icon fa-bar-chart-o"></span>
+						<span><i class="student icon"></i></span>
 						<h2><strong> WHO AM I ?</strong></h2>
-            <%= image_tag 'me.jpg',class: "ui medium circular image" %>
+              <br/><%= image_tag 'me.jpg',class: "ui centered medium image" %><br/>
 						<p>
               I am a second year software engineering student at ENSIAS (École nationale supérieure <br/>
               d'informatique et d'analyse des systèmes), After taking two years at CPGE. <br/>
-            On my spare time, I like to research about Rails and iOS programming. <br/>
+            On my spare time, I like to research about <strong>Rails and iOS programming.</strong> <br/>
             I always feel the need to learn new things and investigate on whatever I find interesting. <br/>
 						<br/>
 
@@ -82,12 +82,15 @@
 								<div class="8u 12u(narrower)">
 
 									<header>
-										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+										<h2>Examples of technologies I toyed with ?</h2>
 									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
+
+									<p><br/>
+                    In my samples, I tried some of OAuth 2 strategies for Omniauth like 'omniauth-facebook' and 'omniauth-twitter', also tried 'Stripe' and 'Devise' gem which is powerfull. Lately, I am trying some ActionCable real-time messaging as an update to an app built using 'mailboxer'.
+                  </p>
 									<footer>
 										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
+											<li><a target="_blank" href="https://github.com/chaymaeBZ" class="button">Find Out More</a></li>
 										</ul>
 									</footer>
 
@@ -95,12 +98,12 @@
 								<div class="4u 12u(narrower) important(narrower)">
 
 									<ul class="featured-icons">
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+										<li><span><i class="facebook square icon"></i></span></li>
+
+										<li><span><i class="twitter icon"></i></span></li>
+										<li><span><i class="laptop icon"></i></span></li>
+                    <li><span><i class="setting icon"></i></span></li>
+
 									</ul>
 
 								</div>
@@ -109,51 +112,43 @@
 
 					<!-- Two -->
 						<section class="wrapper style1 container special">
+              <h2>here is more ...</h2>
 							<div class="row">
+
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span><%= image_tag "heroku-512.png", class: "ui centered tiny image" %></span>
 										<header>
-											<h3>This is Something</h3>
+											<h3>Heroku</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p>Where I deploy my rails apps. In fact, you are looking at it right now ...</p>
 									</section>
 
 								</div>
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span><%= image_tag "elephant.png", class: "ui centered tiny image" %></span>
 										<header>
-											<h3>Also Something</h3>
+											<h3>PostgreSQL</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p>This comes in handy when working with heroku ..</p>
 									</section>
 
 								</div>
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span><%= image_tag "github-512.png", class: "ui centered tiny image" %></span>
 										<header>
-											<h3>Probably Something</h3>
+											<h3>Github</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p>To keep my code clean and share it easily.</p>
 									</section>
 
 								</div>
-								<div class="4u 12u(narrower)">
 
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Probably Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
 							</div>
 						</section>
 
@@ -161,63 +156,24 @@
 						<section class="wrapper style3 container special">
 
 							<header class="major">
-								<h2>Next look at this <strong>cool stuff</strong></h2>
+								<h2>Next this is my <strong>iBooks library</strong></h2>
 							</header>
 
 							<div class="row">
-								<div class="6u 12u(narrower)">
+								<div class="12u 12u(narrower)">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h3>A Really Fast Train</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<%= image_tag "mylib", style: "width: 100%;" %>
+
+										<p>This is a mixture of books I am still reading and those I finished.</p>
 									</section>
 
 								</div>
-								<div class="6u 12u(narrower)">
 
-									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>An Airport Terminal</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-							</div>
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Hyperspace Travel</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>And Another Train</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
 							</div>
 
-							<footer class="major">
-								<ul class="buttons">
-									<li><a href="#" class="button">See More</a></li>
-								</ul>
-							</footer>
+
+
 
 						</section>
 
@@ -227,13 +183,14 @@
 				<section id="cta">
 
 					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<h2>Did you find <strong>something</strong><br/> interessting about me ?</h2>
+						<p>Did you like what I do ? Do you have a cool project I can contribute to ?<br/>
+							 Or maybe Have any recommendations ? Please write me whatever comes across <br/>
+							 your mind, I'd love to hear about you.</p>
 					</header>
 					<footer>
 						<ul class="buttons">
-							<li><a href="#" class="button special">Take My Money</a></li>
-							<li><a href="#" class="button">LOL Wut</a></li>
+							<li><a href="#" class="button special">Contact me</a></li>
 						</ul>
 					</footer>
 
@@ -251,7 +208,7 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Bazzaoui chaymae</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
