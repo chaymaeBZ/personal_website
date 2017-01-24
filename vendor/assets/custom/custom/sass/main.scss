@@ -1,8 +1,8 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import font-url("font-awesome.min.scss");
+@import font-url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /*
 	Twenty by HTML5 UP
@@ -19,7 +19,7 @@
 		narrower: '(max-width: 840px)',
 		mobile: '(max-width: 736px)'
 	));
-	
+
 	@include skel-layout((
 		reset: 'full',
 		boxModel: 'border',
