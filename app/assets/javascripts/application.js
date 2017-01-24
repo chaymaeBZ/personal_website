@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require custom
-//= require semantic-ui/icons
+//= require semantic-ui
 //= require_tree .
