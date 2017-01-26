@@ -79,14 +79,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   host = 'personalwebs.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
-  ActionMailer::Base.smtp_settings = {
-    :address        => 'smtp.sendgrid.net',
-    :port           => '587',
-    :authentication => :plain,
-    
-    :domain         => 'heroku.com',
-    :enable_starttls_auto => true
-  }
+
 
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?

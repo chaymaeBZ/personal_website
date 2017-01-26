@@ -3,6 +3,6 @@ class StaticPagesController < ApplicationController
   end
 
   def sendme
-    ContactMailer.welcome_email.deliver_now
+    ContactMailer.welcome_email().deliver_now
   end
 end
