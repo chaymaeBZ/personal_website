@@ -3,7 +3,5 @@ class StaticPagesController < ApplicationController
   end
 
   def thankyou
-    #ContactMailer.welcome_email().deliver
-    #render text: "email delivered"
   end
 end
