@@ -1,0 +1,91 @@
+
+	<body class="contact">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a>Bazzaoui <span>chaymae</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><%= link_to  "Welcome", home_path, class: "button special" %></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon fa-envelope"></span>
+						<h2>Get In Touch</h2>
+						<p>Use the form below to give <strong>/dev/null</strong> a piece of your mind.</p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 special container 75%">
+
+							<!-- Content -->
+								<div class="content">
+									<%= form_for(:contact, url: contacts_path) do |f| %>
+										<div class="row 50%">
+											<div class="6u 12u(mobile)">
+												<%= f.text_field :name, placeholder: "Name" %>
+											</div>
+											<div class="6u 12u(mobile)">
+												<%= f.email_field :email, placeholder: "Email"%>
+											</div>
+										</div>
+										<div class="row 50%">
+											<div class="12u">
+												<%= f.text_field :subject, placeholder: "Subject" %>
+											</div>
+										</div>
+										<div class="row 50%">
+											<div class="12u">
+												<%= f.text_area :message, placeholder: "Message", rows: 7 %>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<ul class="buttons">
+													<li><%= f.submit "send message", class: "special" %></li>
+												</ul>
+											</div>
+										</div>
+									<% end %>
+								</div>
+
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>

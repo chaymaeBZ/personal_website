@@ -1,6 +1,6 @@
 class ContactMailer < ApplicationMailer
-  def welcome_email()
+  def contact_email(name, email, subject, message)
 
-    mail(to: "bazzaoui.chaymae@gmail.com", subject: 'Welcome to My Awesome Site')
+    mail(to: "bazzaoui.chaymae@gmail.com", subject: subject)
   end
 end
