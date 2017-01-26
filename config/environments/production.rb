@@ -79,6 +79,9 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   host = 'personalwebs.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
+  :user_name      => ENV['SENDGRID_USERNAME'],
+  :password       => ENV['SENDGRID_PASSWORD'],
+  :domain         => 'heroku.com',
 
 
 
