@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  get 'contacts/new'
 
   root 'static_pages#index'
-  match "/sendme" => "static_pages#sendme", via: [:get, :post]
+  match '/message_sent' , to: "static_pages#thankyou", via: :get
   resources :contacts, only: [:new, :create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
