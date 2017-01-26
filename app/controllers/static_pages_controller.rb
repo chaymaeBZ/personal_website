@@ -1,9 +1,8 @@
 class StaticPagesController < ApplicationController
   def index
   end
-  def send
-    c = ContactForm.new(:name => 'José', :email => 'jose@email.com', :message => 'Cool!')
-    c.deliver
-    render 'sendme'
+
+  def sendme
+    ContactMailer.welcome_email.deliver_now
   end
 end
