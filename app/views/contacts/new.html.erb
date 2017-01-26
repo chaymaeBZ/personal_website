@@ -7,7 +7,7 @@
 					<h1 id="logo"><a>Bazzaoui <span>chaymae</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><%= link_to  "Welcome", home_path, class: "button special" %></li>
+							<li class="current"><%= link_to  "Welcome", root_path, class: "button special" %></li>
 						</ul>
 					</nav>
 				</header>
@@ -26,7 +26,18 @@
 
 							<!-- Content -->
 								<div class="content">
-									<%= form_for(:contact, url: contacts_path) do |f| %>
+									<%= form_for @contact do |f| %>
+										<% if @contact.errors.any? %>
+											<div class="error_messages">
+													<h4><%= pluralize(@contact.errors.count, "error") %> prohibited this message
+													from being sent:</h4>
+													<ul>
+														<% @contact.errors.full_messages.each do |msg| %>
+															<li>* <%= msg %></li>
+														<% end %>
+													</ul>
+										<% end %>
+											</div>
 										<div class="row 50%">
 											<div class="6u 12u(mobile)">
 												<%= f.text_field :name, placeholder: "Name" %>

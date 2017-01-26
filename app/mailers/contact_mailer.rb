@@ -1,6 +1,5 @@
 class ContactMailer < ApplicationMailer
-  def contact_email(name, email, subject, message)
-
-    mail(to: "bazzaoui.chaymae@gmail.com", subject: subject)
+  def contact_email(@contact)
+    mail(to: "bazzaoui.chaymae@gmail.com", subject: @contact.subject)
   end
 end
